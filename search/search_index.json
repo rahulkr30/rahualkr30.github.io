@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Home","text":"<p> <p>Rahul Kumar</p> <p>     Rahul's short description here.   </p> </p>"},{"location":"blog/","title":"Blog","text":""},{"location":"project/","title":"My Projects Index","text":"<p>You projects are listed here.</p>"}]}
