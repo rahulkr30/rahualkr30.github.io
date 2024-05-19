@@ -1,0 +1,117 @@
+repo_url: https://github.com/rahulkr30/rahulkr30.github.io
+repo_name: rahulkr30.github.io
+site_author: Rahul Kumar
+site_description: Rahul's personal website for showcasing his learnings, blogs and more.
+site_name: Rahul Kumar
+site_url: https://rahulkr30.github.io
+
+theme:
+  language: en
+  name: material
+  font:
+    text: Montserrat
+  icon:
+    repo: octicons/repo-16
+    logo: fontawesome/solid/om
+  favicon: https://arv-anshul.github.io/data/assets/favicon.png
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - navigation.indexes
+    - navigation.path
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  palette:
+    scheme: slate
+    primary: black
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.tilde
+  - tables
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - blog:
+      archive_date_format: MMMM, yyyy
+      archive_url_date_format: yyyy/MM
+      categories_url_format: "c/{slug}"
+      post_url_format: "{slug}"
+      pagination_per_page: 5
+      pagination_format: $link_first $link_previous ~2~ $link_next $link_last
+  - search: null
+  - markdownextradata:
+      data: docs/data/render_yaml/
+
+extra:
+  social:
+    - icon: material/email
+      link: mailto:rahul@gmail.com
+      name: E-Mail
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/
+      name: Connect on Instagram
+    - icon: fontawesome/brands/github
+      link: https://github.com/rahulkr30
+      name: See my GitHub Profile
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/Rahul-Kumar30
+      name: Connect on LinkedIn
+    - icon: material/account-box
+      link: \#
+      name: Resume as PDF
+
+copyright: |
+  Copyright &copy; 2024 <a href="https://github.com/rahulkr30">Anshul Raj Verma</a>
+
+extra_css:
+  - https://arv-anshul.github.io/stylesheets/customize.css
+  - https://arv-anshul.github.io/stylesheets/extra.css
+  - https://arv-anshul.github.io/stylesheets/simpleicons.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+extra_javascript:
+  - https://arv-anshul.github.io/javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+nav:
+  - Home:
+      - index.md
+  - Project:
+      - project/index.md
+  - Blog:
+      - blog/index.md
+  - About:
+      - about/index.md
